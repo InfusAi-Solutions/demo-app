@@ -1,0 +1,58 @@
+# Ignore .dockerignore file itself (if it exists in the project)
+.dockerignore
+
+# Ignore Dockerfile (if it exists in the project)
+Dockerfile
+
+# Ignore any .git directory in any subfolder of the context
+**/.git
+
+# Ignore .svn directories
+**/.svn
+
+# Ignore .hg directories
+**/.hg
+
+# Ignore .bzr directories
+**/.bzr
+
+# Ignore .DS_Store files (Mac specific)
+**/.DS_Store
+
+# Ignore .vscode directory (if present)
+.vscode/
+
+# Ignore .idea directory (if present)
+.idea/
+
+# Ignore node_modules folder (if using Node.js)
+node_modules/
+
+# Ignore npm-debug.log file (if present)
+npm-debug.log
+
+# Ignore yarn-error.log file (if present)
+yarn-error.log
+
+# Ignore .pytest_cache folder (if present)
+.pytest_cache/
+
+# Ignore .tox folder (if present)
+.tox/
+
+# Ignore .venv folder (if present)
+.venv/
+
+# Ignore pipenv's virtualenv (if using Pipenv)
+.venv
+
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore development configuration files
+*.bak
+*.swp
+*~
