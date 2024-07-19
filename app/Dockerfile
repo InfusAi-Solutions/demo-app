@@ -11,7 +11,7 @@ COPY ./requirements.txt .
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 # Copy the entire source directory into the container at /code
-COPY ./src ./src
+COPY ./app/src ./src
 
 # Expose the port that the application runs on
 EXPOSE 8000
