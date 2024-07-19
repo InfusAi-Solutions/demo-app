@@ -1,7 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-app
+  name: demo-app-deployment
+  labels:
+    app: demo-app  
+  namespace: k8s-test  
 
 spec:
   replicas: 1
@@ -14,5 +17,7 @@ spec:
         app: demo-app
     spec:
       containers:
-        - image: docker.io/andy081/demo-app:v0.0.1
-          name: demo-app        
+        - name: demo-app 
+          image: andy081/demo-app:v0.0.1
+          ports:
+            - containerPort: 8000
